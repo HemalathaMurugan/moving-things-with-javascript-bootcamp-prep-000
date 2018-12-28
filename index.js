@@ -1,4 +1,4 @@
-const app = "I don't do much."
+//const app = "I don't do much."
 var dodger=document.getElementById('dodger');
 
 function moveDodgerLeft() {
@@ -19,7 +19,9 @@ function moveDodgerRight() {
     dodger.style.left = `${left+1}px`
   }
 }
+
 document.addEventListener('keydown', function(e) {
+  debugger;
   switch (e.which) {
     case 37:
       moveDodgerLeft()
